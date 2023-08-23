@@ -18,6 +18,10 @@ nav a {
     padding: 0 1rem;
 }
 
+.product-details img {
+    max-width: 80%;
+}
+
 .banner {
     border: 1px solid #666;
     background-color: rgb(180, 153, 206);
