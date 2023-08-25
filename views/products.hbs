@@ -9,15 +9,22 @@
 <h2>Price upon request</h2>
 {{/if}}
 
+{{#if isVeggie}}
+<h3>Enjor our vegetarian selection</h3>
+{{/if}}
+
 <ul>
     {{#each ingredients}}
-    <li>{{this.ingredientName}}</li>
+    <li>{{this}}</li>
     {{/each}}
 </ul>
 
-{{log ingredients.}}
 
 <h2>Taste better with {{recommendedDrink}} </h2>
+<h3>Cooked with love by {{chef}}</h3>
 <img src="/images/{{imageFile}}" alt="{{imageFile}}">
 
 </section>
+
+{{> ctaOrderNow}}
+
